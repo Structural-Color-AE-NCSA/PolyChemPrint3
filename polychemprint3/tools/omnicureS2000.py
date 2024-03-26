@@ -29,7 +29,7 @@ class omnicureS2000(serialDeviceSpec, toolSpec):
     def __init__(self,
                  name="T_OmnicureS2000",
                  units="percent",
-                 devAddress="/dev/ttyUSB0",
+                 devAddress="COM5",
                  baudRate=19200,
                  commsTimeOut=0.1,
                  __verbose__=1,

@@ -22,7 +22,7 @@ class lulzbotTaz6_BP(serialDeviceSpec, Axes3DSpec):
     def __init__(self,
                  name='LulzbotTaz6',
                  posMode='relative',
-                 devAddress="/dev/ttyACM0",
+                 devAddress="COM4",
                  baudRate=115200,
                  commsTimeOut=0.001,
                  __verbose__=1,
