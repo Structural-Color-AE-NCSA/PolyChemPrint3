@@ -29,7 +29,7 @@ class ultimusExtruder(serialDeviceSpec, toolSpec):
     def __init__(self,
                  name="T_UltimusExtruder",
                  units="kPa",
-                 devAddress="/dev/ttyS0",
+                 devAddress="COM3",
                  baudRate=115200,
                  commsTimeOut=0.1,
                  __verbose__=1,
