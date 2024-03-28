@@ -21,7 +21,7 @@ import logging
 import crcmod.predefined
 
 
-class omnicureS2000(serialDeviceSpec, toolSpec):
+class omnicureS2000Elite(serialDeviceSpec, toolSpec):
     """Implements the toolSpec abstract base class for the Excelitas/Lumen Dynamics Omnicure S2000."""
 
     ### CONSTRUCT/DESTRUCT METHODS
@@ -76,7 +76,7 @@ class omnicureS2000(serialDeviceSpec, toolSpec):
                    False if error generated and tool is not ready for use
         """
         passed = False
-        print("\t\t\t" + "Activating Omnicure S2000.")
+        print("\t\t\t" + "Activating Omnicure S2000 Elite.")
 
         # Start Serial Device
         [status, message] = self.startSerial()
@@ -92,10 +92,10 @@ class omnicureS2000(serialDeviceSpec, toolSpec):
                 if status == 1:
                     passed = True
                     notDone = False
-                    print("\t\t\t" + "Omnicure S2000 Activated Successfully!")
+                    print("\t\t\t" + "Omnicure S2000 Elite Activated Successfully!")
                 else:
                     tryCounter += 1
-                    print("\t\t\t" + "Omnicure S2000 Failed to Activate!")
+                    print("\t\t\t" + "Omnicure S2000 Elite Failed to Activate!")
         return passed
 
     def deactivate(self):
@@ -128,9 +128,9 @@ class omnicureS2000(serialDeviceSpec, toolSpec):
             passed = True
 
         if passed == 1:
-            print("\t\t\t" + "Omnicure S2000 Deactivated Successfully!")
+            print("\t\t\t" + "Omnicure S2000 Elite Deactivated Successfully!")
         else:
-            print("\t\t\t" + "Omnicure S2000 Failed to Deactivate!")
+            print("\t\t\t" + "Omnicure S2000 Elite Failed to Deactivate!")
         return passed
 
     # PCP.tools.toolSpec Tool Action (Dispensing) Methods
