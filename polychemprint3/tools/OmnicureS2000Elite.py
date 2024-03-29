@@ -21,7 +21,7 @@ import logging
 import crcmod.predefined
 
 
-class omnicureS2000Elite(serialDeviceSpec, toolSpec):
+class OmnicureS2000Elite(serialDeviceSpec, toolSpec):
     """Implements the toolSpec abstract base class for the Excelitas/Lumen Dynamics Omnicure S2000."""
 
     ### CONSTRUCT/DESTRUCT METHODS
